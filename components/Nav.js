@@ -28,9 +28,9 @@ function Nav() {
         </Link>
 
         <Link href='/'>
-          <p className=''>INTERIORS</p>
+          <p className=''>DESIGN</p>
         </Link> <Link href='/'>
-          <p className=''>INTERIORS</p>
+          <p className=''>LIFESTYLE</p>
         </Link>
 
 
@@ -40,9 +40,9 @@ function Nav() {
  
 
         <Link href='/about' className='flex gap-2 flex-center '>
-           <Image src="/assets/image/8316.jpg" width={50} height={50}   className='object-contain' />
+           {/* <Image src="/assets/image/8316.jpg" width={50} height={50}   className='object-contain' /> */}
 
-           <h1 className='text-xl'>prerkwgvwev</h1>
+           <h1 className='text-xl'>EXCORP</h1>
          
         
         </Link>
@@ -50,8 +50,12 @@ function Nav() {
     <div className='lg:flex hidden '>
        
         <div className=' md:flex gap-5 flex-center hidden sm:visible'>
-        <button className='black_btn'>Create Post</button>
-        <button className='outline_btn'>Sign Out</button>
+        <Link href='/'>
+                <p className=''>THE EDIT</p>
+              </Link>
+              <Link href='/'>
+          <p className=''>ABOUT+</p>
+        </Link>
 
       </div>
       </div>
@@ -101,7 +105,7 @@ function Nav() {
                   }}
                   className='mt-5 w-full black_btn'
                 >
-                  Sign Out
+                  Login
                 </button>
               </div>
             )}
@@ -110,16 +114,9 @@ function Nav() {
           <>
             {providers &&
               Object.values(providers).map((provider) => (
-                <button
-                  type='button'
-                  key={provider?.name}
-                  onClick={() => {
-                    signIn(provider.id);
-                  }}
-                  className='black_btn'
-                >
-                  Sign in
-                </button>
+                <Link href='/'>
+                <p className=''>DESIGN</p>
+              </Link> 
               ))}
           </>
         )}
