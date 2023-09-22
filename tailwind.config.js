@@ -18,6 +18,9 @@ module.exports = {
         25: '.25',
         175: '1.75',
       },
+      spacing: {
+        '3px': '520px',
+      },
       boxShadow: {
         'left-dark': '-5px 0px 15px rgba(0, 0, 0, 0.3)',
       },

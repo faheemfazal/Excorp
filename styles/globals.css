@@ -205,3 +205,10 @@
 .flex-between {
   @apply flex justify-between mx-8 items-center;
 }
+
+
+.square {
+ 
+  padding-bottom: 50%;
+  background-color: teal;
+}

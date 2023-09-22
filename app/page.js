@@ -38,6 +38,7 @@ export default function Home() {
     }
   };
 
+
   return (
     <>
     
@@ -93,10 +94,11 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="w-1/2 h-full p-16 ">
-          <div className={`w-full h-3/4  border-8  border-dashed border-teal-400 border-spacing-48  pl-10 pt-20 ${rotate  ? "rotateImg" : ""}`} >
+        <div className="w-1/2 h-full px-20 pt-14 ">
+          <div className={`w-full aspect-square  border-8  border-dashed border-teal-400 border-spacing-48  pl-20 pt-16 ${state ==1 && 'bg-HomeOne'  } ${state ==2 && 'bg-Hometwo'  } ${state ==3 && 'bg-Homethree'  } bg-cover bg-center ${rotate  ? "rotateImg" : ""}`} >
+            
         </div>
-            <div className={`w-[550px] h-[500px] absolute right-44 top-40  ${state ==1 && 'bg-HomeOne'  } ${state ==2 && 'bg-Hometwo'  } ${state ==3 && 'bg-Homethree'  } bg-cover bg-center ${rotateImg ? "innerImg" : ""}`}></div>
+            {/* <div className={`w-full   aspect-square relative -right-14 lg:-top-3px md:-top-72  ${state ==1 && 'bg-HomeOne'  } ${state ==2 && 'bg-Hometwo'  } ${state ==3 && 'bg-Homethree'  } bg-cover bg-center ${rotateImg ? "innerImg" : ""}`}></div> */}
           </div>
       </div>
       
